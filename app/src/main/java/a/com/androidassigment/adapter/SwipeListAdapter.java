@@ -89,6 +89,9 @@ public class SwipeListAdapter extends BaseAdapter {
 
             if(row.imageHref.length()>0) {
                 Picasso.get().load(row.imageHref).placeholder(R.drawable.loading).error(R.drawable.ic_error_outline_black_24dp).into(image);
+            }else{
+
+                image.setImageResource(R.drawable.ic_error_outline_black_24dp);
             }
         }
     }
