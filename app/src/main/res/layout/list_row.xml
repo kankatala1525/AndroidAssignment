@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dip">
+
+
+    <!-- Title-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rihanna Love the way lie"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/list_title_size"
+        android:textStyle="bold"
+        android:layout_margin="2dp"
+        android:typeface="sans" />
+
+    <!-- Description and Image Layout-->
+
+    <LinearLayout
+        android:id="@+id/layout_dec_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="2dp"
+        android:orientation="horizontal"
+        android:padding="3dip">
+
+        <!-- Description -->
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1"
+            android:text="Just gona stand there and ..."
+            android:textColor="@color/black"
+            android:textSize="@dimen/list_descr_size" />
+
+        <!-- Image -->
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="@dimen/list_image_width"
+            android:layout_height="@dimen/list_image_height"
+            android:src="@drawable/ic_error_outline_black_24dp" />
+
+
+        <!-- Right end Arrow -->
+        <ImageView
+            android:layout_width="@dimen/list_image_arrow_width"
+            android:layout_height="@dimen/list_image_arrow_height"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </LinearLayout>
+
+</LinearLayout>
